@@ -1,0 +1,855 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>by Eldrick Tobin</title>
+    <style type="text/css">
+        <!--
+        body {
+            text-align: center;
+            font-family: "Verdana", Arial, sans-serif;
+            background-color: #FFFFF8;
+            color: #2890FF;
+            font-size: 12px
+        }
+
+        h1 {
+            font-family: "Verdana";
+            color: #2890FF;
+            font-size: 26px;
+            font-style: italic;
+            font-weight: normal;
+            margin: 4px
+        }
+
+        h3 {
+            font-family: "Verdana";
+            color: #2890FF;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: normal;
+            margin: 3px
+        }
+
+        h4 {
+            font-family: "Verdana";
+            color: #FF6800;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: normal;
+            margin: 2px
+        }
+
+        h5 {
+            font-family: "Verdana";
+            color: #2890FF;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: normal;
+            margin: 2px
+        }
+
+        table {
+            border: 0px;
+            padding: 0px;
+            border-spacing: 1px
+        }
+
+        img {
+            border-width: 0px;
+        }
+
+        .ttxt {
+            border: 0px;
+            padding: 2px
+        }
+
+        .tgr, .tinv {
+            border: 0px
+        }
+
+        .tadj {
+            border-style: none;
+            border-collapse: collapse
+        }
+
+            .tadj td {
+                border: 0px none;
+                padding: 0px
+            }
+
+        .txt1 {
+            font-family: "Verdana";
+            color: #2890FF;
+            font-size: 12px;
+            text-align: left
+        }
+
+        .txt2 {
+            font-family: "Verdana";
+            color: #FF6800;
+            font-size: 12px;
+            text-align: left
+        }
+
+        .t1 {
+            font-family: "Verdana";
+            color: #000000;
+            font-size: 12px;
+            text-align: left;
+            font-weight: bold
+        }
+
+        .t2 {
+            font-family: "Verdana";
+            color: #000000;
+            font-size: 12px;
+            text-align: left;
+            font-style: normal
+        }
+
+        .t5 {
+            font-family: "Verdana";
+            color: #000000;
+            font-size: 12px;
+            text-align: left;
+            font-weight: normal;
+            font-style: italic
+        }
+
+        .t6 {
+            font-family: "Verdana";
+            color: #000000;
+            font-size: 10px;
+            text-align: right;
+            font-style: normal;
+            white-space: nowrap;
+        }
+
+        .tal {
+            text-align: left
+        }
+
+        .tar {
+            text-align: right
+        }
+
+        .tac {
+            text-align: center
+        }
+
+        .s1 {
+            font-family: "Arial";
+            color: #FF6800;
+            font-size: 9px;
+            vertical-align: bottom;
+            text-align: center
+        }
+
+        .s2 {
+            font-family: "Arial";
+            color: #2890FF;
+            font-size: 9px;
+            vertical-align: bottom;
+            text-align: center;
+            border: 0px
+        }
+
+        .s3 {
+            font-family: "Arial";
+            color: #000000;
+            font-size: 9px;
+            vertical-align: bottom;
+            text-align: center
+        }
+
+        .s4 {
+            font-family: "Verdana";
+            color: #000000;
+            font-size: 10px;
+            text-align: left
+        }
+
+        .s5 {
+            font-family: "Verdana";
+            color: #000000;
+            font-size: 10px;
+            text-align: left;
+            border: 0px
+        }
+
+        .sq {
+            font-style: italic
+        }
+
+        .win {
+            font-weight: bold
+        }
+
+        .toc {
+            font-family: "Verdana";
+            color: #FF6800;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: normal;
+            margin: 2px
+        }
+
+        .ra {
+            font-family: "Arial";
+            color: #000000;
+            font-size: 32px;
+            text-align: center;
+            border-style: solid;
+            border-width: 4px;
+            border-color: #ffffff #000000 #000000 #ffffff;
+        }
+
+        .rn {
+            font-family: "Verdana";
+            color: #2890FF;
+            font-size: 16px;
+            text-align: left;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        .rb {
+            border-style: solid;
+            border-width: 3px 0px;
+            border-color: #FFB410;
+            color: #2890FF
+        }
+
+        .box {
+            Border: 1px solid #000000
+        }
+
+        .ac {
+            font-family: "Verdana", Arial, sans-serif;
+            color: #000000;
+            font-size: 10px;
+            vertical-align: middle;
+            text-align: center
+        }
+
+        .am {
+            vertical-align: top;
+            Border: 1px solid #2890FF
+        }
+
+        .cr {
+            background-color: #FFFFF8;
+            padding: 2px;
+            border-style: outset;
+            border-width: 2px;
+            font-family: Arial, sans-serif;
+            color: #2890FF;
+            font-size: 12px;
+            vertical-align: middle;
+            text-align: left
+        }
+
+        .ca {
+            background-color: #FF7800
+        }
+
+        .cb {
+            background-color: #FFB410
+        }
+
+        .cc {
+            background-color: #FFF000
+        }
+
+        .cbg {
+            background-color: #FFFFF8
+        }
+
+        .cn {
+            background-color: #FF3C00
+        }
+
+        .cd {
+            background-color: #0080FF
+        }
+
+        .ce {
+            background-color: #00A0FF
+        }
+
+        .cf {
+            background-color: #00C0FF
+        }
+
+        .cda {
+            background-color: #0088FF
+        }
+
+        .cdb {
+            background-color: #0090FF
+        }
+
+        .cdc {
+            background-color: #0098FF
+        }
+
+        .cea {
+            background-color: #00A8FF
+        }
+
+        .ceb {
+            background-color: #00B0FF
+        }
+
+        .cec {
+            background-color: #00B8FF
+        }
+
+        .cfa {
+            background-color: #00B0FF
+        }
+
+        .cfb {
+            background-color: #00A0FF
+        }
+
+        .cfc {
+            background-color: #0090FF
+        }
+
+        .cs0 {
+            background-color: #A0A0A0
+        }
+
+        .cs1 {
+            background-color: #FF0000
+        }
+
+        .cs2 {
+            background-color: #FFFF00
+        }
+
+        .cs3 {
+            background-color: #00FF00
+        }
+
+        .cs4 {
+            background-color: #00FFFF
+        }
+
+        .cs5 {
+            background-color: #0000FF
+        }
+
+        .cacl {
+            background-color: #FF0000
+        }
+
+        .cacm {
+            background-color: #FFFF00
+        }
+
+        .cach {
+            background-color: #00FF00
+        }
+
+        .cs1a {
+            background-color: #FF7F00
+        }
+
+        .cs2a {
+            background-color: #7FFF00
+        }
+
+        .cs3a {
+            background-color: #00FF7F
+        }
+
+        .cs4a {
+            background-color: #007FFF
+        }
+
+        A {
+            color: #2890FF
+        }
+        -->
+    </style>
+
+</head>
+<body>
+    <table border="0" width="100%" cellspacing="1">
+        <tr>
+            <td>
+                <b>Item</b>
+            </td>
+            <td>
+                <b>Document/File Type</b>
+            </td>
+            <td>
+                <b>Size</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="ClosetShrine.html">Closet Shrine mIRCStats</a>
+</td>
+            <td>
+                HTML
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TobinNet.html">TobinNet mIRCStats</a>
+            </td>
+            <td>
+                HTML
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="RoshieLovelySuite">RoshieLovelySuite mIRCStats</a>
+            </td>
+            <td>
+                HTML
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="index.html">index</a>
+            </td>
+            <td>
+                HTML
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="Diablo_(Windows)_-_Flip1.wav">Diablo Book Flip</a>
+            </td>
+            <td>
+                WAV
+            </td>
+            <td>
+                39 kb
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="Diablo2_Potion.ogg">Diablo Potion Drop</a>
+            </td>
+            <td>
+                OGG
+            </td>
+            <td>
+                11 kb
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="6m7dznnn2ob31.png">Padoru Image</a>
+            </td>
+            <td>
+                PNG
+            </td>
+            <td>
+                298kb
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="6m7dznnn2ob31 (1).png">Padoru Image Smaller</a>
+            </td>
+            <td>
+               PNG
+            </td>
+            <td>
+                406kb
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="STO-Image1.png">Star Trek Online - Chair with PDA</a>
+            </td>
+            <td>
+                PNG
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="selfiewithgoliath.png">GTAVO Image. Selfie with my Mobile Command Center: Goliath</a>
+            </td>
+            <td>
+                PNG
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="Image1.png">The kind of ads I get sometimes.</a>
+            </td>
+            <td>
+                PNG
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="IMG_0325.png">Jaina Lounging under a towel.</a>
+            </td>
+            <td>
+                PNG
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="IMG_0359.png">Selfie</a>
+            </td>
+            <td>
+                PNG
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="IMG_0360">Leg shot</a>
+            </td>
+            <td>
+                PNG
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="IMG_0361">Prothetic Leg Shot</a>
+            </td>
+            <td>
+                PNG
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="consequences.pdf.list.txt">consequences.pdf.list.txt</a>
+            </td>
+            <td>
+                TXT
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="L&S-Consequences-01-WhyWasEventZeroSoBad.pdf">L&S-Consequences-01-WhyWasEventZeroSoBad.pdf</a>
+            </td>
+            <td>
+                PDF
+            </td>
+            <td>
+                Deprecated.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="L&S-Consequences-02-WhatElseWentWrong.pdf">L&S-Consequences-02-WhatElseWentWrong.pdf</a>
+            </td>
+            <td>
+                PDF
+            </td>
+            <td>
+                Legacy
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="L&S-Consequences-03-HowTheMediaAreHandlingIt.pdf">L&S-Consequences-03-HowTheMediaAreHandlingIt.pdf</a>
+            </td>
+            <td>
+                PDF
+            </td>
+            <td>
+                Outdated
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="Template-Fiction-2.5.html">Template-Fiction-2.5</a>
+            </td>
+            <td>
+                HTML
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="Template-Fiction-2.5.pdf">Template-Fiction-2.5</a>
+            </td>
+            <td>
+                PDF
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="Template-Fiction-2.5.txt">Template-Fiction-2.5</a>
+            </td>
+            <td>
+                TXT
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TheArc-L&S-Consequences-01-WhyWasEventZeroSoBad.html">TheArc-L&S-Consequences-01-WhyWasEventZeroSoBad</a>
+            </td>
+            <td>
+                HTML
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TheArc-L&S-Consequences-01-WhyWasEventZeroSoBad.pdf">TheArc-L&S-Consequences-01-WhyWasEventZeroSoBad</a>
+            </td>
+            <td>
+                PDF
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TheArc-L&S-Consequences-01-WhyWasEventZeroSoBad.txt">TheArc-L&S-Consequences-01-WhyWasEventZeroSoBad</a>
+            </td>
+            <td>
+                TXT
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TheArc-L&S-Consequences-02-WhatElseWentWrong.html">TheArc-L&S-Consequences-02-WhatElseWentWrong</a>
+            </td>
+            <td>
+                HTML
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TheArc-L&S-Consequences-02-WhatElseWentWrong.pdf">TheArc-L&S-Consequences-02-WhatElseWentWrong</a>
+            </td>
+            <td>
+                PDF
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TheArc-L&S-Consequences-02-WhatElseWentWrong.txt">TheArc-L&S-Consequences-02-WhatElseWentWrong</a>
+            </td>
+            <td>
+                TXT
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TheArc-L&S-Consequences-03-HowTheMediaAreHandlingIt.html">TheArc-L&S-Consequences-03-HowTheMediaAreHandlingIt</a>
+            </td>
+            <td>
+                HTML
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TheArc-L&S-Consequences-03-HowTheMediaAreHandlingIt.pdf">TheArc-L&S-Consequences-03-HowTheMediaAreHandlingIt</a>
+            </td>
+            <td>
+                PDF
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TheArc-L&S-Consequences-03-HowTheMediaAreHandlingIt.txt">TheArc-L&S-Consequences-03-HowTheMediaAreHandlingIt</a>
+            </td>
+            <td>
+                TXT
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TheArc-L&S-Consequences-04-WhoWouldLiveHereAndWhy.html">TheArc-L&S-Consequences-04-WhoWouldLiveHereAndWhy</a>
+            </td>
+            <td>
+                HTML
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TheArc-L&S-Consequences-04-WhoWouldLiveHereAndWhy.pdf">TheArc-L&S-Consequences-04-WhoWouldLiveHereAndWhy</a>
+            </td>
+            <td>
+                PDF
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TheArc-L&S-Consequences-04-WhoWouldLiveHereAndWhy.txt">TheArc-L&S-Consequences-04-WhoWouldLiveHereAndWhy</a>
+            </td>
+            <td>
+                TXT
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TheArc-L&S-Consequences-05-WhenDidTheProtagonistShowUpAnyway.html">TheArc-L&S-Consequences-05-WhenDidTheProtagonistShowUpAnyway</a>
+            </td>
+            <td>
+                HTML
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TheArc-L&S-Consequences-05-WhenDidTheProtagonistShowUpAnyway.pdf">TheArc-L&S-Consequences-05-WhenDidTheProtagonistShowUpAnyway</a>
+            </td>
+            <td>
+                PDF
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="TheArc-L&S-Consequences-05-WhenDidTheProtagonistShowUpAnyway.txt">TheArc-L&S-Consequences-05-WhenDidTheProtagonistShowUpAnyway</a>
+            </td>
+            <td>
+                TXT
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="Writing-Trial-Metroid-Sound-Mission.html">Writing-Trial-Metroid-Sound-Mission</a>
+            </td>
+            <td>
+                HTML
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="Writing-Trial-Metroid-Sound-Mission.pdf">Writing-Trial-Metroid-Sound-Mission</a>
+            </td>
+            <td>
+                PDF
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="Writing-Trial-Metroid-Sound-Mission.txt">Writing-Trial-Metroid-Sound-Mission</a>
+            </td>
+            <td>
+                TXT
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+<!---
+
+        <tr>
+            <td>
+                <a href="">Item</a>
+            </td>
+            <td>
+                PNG
+            </td>
+            <td>
+                --
+            </td>
+        </tr>
+
+
+-->
