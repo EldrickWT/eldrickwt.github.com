@@ -1,4 +1,4 @@
-﻿*=*=0==0==0==0==0=
+﻿*=**=**=**=**=* TW,CW
 
 
                             Trigger Warnings and Preface Garbage
@@ -15,12 +15,12 @@
 *=**=**=**=**=**=**=**=**=**=**=**=**=**=**=**=**=**=**=**=**=**=**=**=**=**=**=**=**=**=*
 
 
-*=* -
+*=* (entry one) - (scree)
 
 
 Preface Over. Trigger Warnings over. My Sanity is over. Let's jump right in.
 ________________
-=0==0==0==0==0=
+=0==0==0==0==0=Title
 
 
 
@@ -39,12 +39,12 @@ ________________
                                    <chapter sub-title if any>
 
 
-=0==0==0==0==0==0==0==0==0==0=
-     -
+=0==0==0==0==0=Start
+     -(blah, deleting the indent)
 ________________
-=0==0==0==0==0==0==0==0==0==0=
+=0==0==0==0==0=Cast
                                         "Cast" Addendums
--
-=0==0==0==0==0=
+* (entry) - (scree)
+=0==0==0==0==0=Glossary
                                        Glossary (if Used)
--
+* (entry) - (scree)
